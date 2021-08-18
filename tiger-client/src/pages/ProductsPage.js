@@ -13,6 +13,7 @@ function ProductsPage() {
   console.log(products, 'pp');
   useEffect(() => {
     fetchAllProducts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchAllProducts = async () => {
